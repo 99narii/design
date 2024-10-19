@@ -54,7 +54,9 @@
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row;
-                    padding: 0 18px;
+                    padding: 0 25px;
+                    width: 80%;
+                    margin: 0 auto;
 
                     .name {
                         color: $MAIN;
@@ -90,14 +92,16 @@
                 }
                 .card_footer {
                     position: absolute;
+                    padding: 0 15px;
                     bottom: 24px;
                     left: 20px;
                     display: flex;
-                    width: 88%;
+                    width: 80%;
                     justify-content: space-between;
                     align-items: center;
                     >div {
                         display: flex;
+                        align-items: center;
                         gap: 10px;
                         >p {
                             font-size: 48px;
