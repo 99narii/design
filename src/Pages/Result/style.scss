@@ -1,15 +1,16 @@
 @import '../../Styles/variable.scss';
 .result {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     color: black;
-    padding: 10vw 5vw;
+    // padding: 10vw 5vw;
     display: flex;
     flex-direction: column;
     background-color: #F3F0FF;
     font-family: $GOTHIC;
     overflow-y: auto; 
+    overflow-x: hidden;
     
 
     >.tit {
@@ -17,10 +18,10 @@
         font-style: normal;
         font-weight: 800;
         text-align: left;
-        margin-bottom: 19px;
+        margin: 19px 0 19px 7vw;
         color: $PURPLE;
     }
-    >.card {
+    .card {
         height: 490px; /* 카드의 고정 높이 */
         width: 100%; /* 부모에 맞춤 */
         position: relative; /* 자식 요소의 기준이 될 위치 설정 */
@@ -142,6 +143,7 @@
         .mixture {
             // width: 100vw;
             background-color: #fff;
+            margin-top: 10vw;
             >p {
                 color: $PURPLE;
                 text-align: left;
@@ -157,8 +159,9 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 margin: 0 auto;
-                padding: 14px 20px;
+                // padding: 14px 20px;
                 color: #fff;
+                padding: 14px 16px;
                 &.mix_card {
                     background-image: url(../../../public/img/mix_card.png);
     
@@ -171,6 +174,97 @@
                     font-style: normal;
                     font-weight: 800;
                     
+                }
+                >.name_tag {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 16px;
+                    >span {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        &:last-child {
+                            align-items: flex-end;
+                        }
+                        >.tit {
+                            font-size: 48px;
+                            margin: 0;
+                            letter-spacing: -0.96px;
+                            font-family: number;
+                        }
+                        >span {
+                            margin: 0;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 800;
+                        }
+                    }
+                }
+            }
+        }
+        .char {
+            width: 135px;
+            margin: 20px auto;
+            transform: rotate(11.208deg);
+        }
+        .cont {
+            background-color: #fff;
+            margin: 5vw;
+            padding: 20px;
+            border-radius: 13px;
+            text-align: left;
+            >.best {
+                border-bottom: 1px solid #D3CBF3;
+                padding-bottom: 20px;
+                >p {
+                    color: $ORANGE;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 800;
+                    margin: 12px 0;
+
+                }
+                >span {
+                    color: $ORANGE;
+                    font-size: 48px;
+                    font-family: number;
+                }
+                >div {
+                    margin-top: 10px;
+                    color: $PURPLE;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 31px; 
+                    >p {
+                        margin: 0;
+                    }
+                }
+            }
+            >.worst {
+                padding: 12px 0;
+                >p {
+                    color: $GREEN;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 800;
+                    margin: 12px 0;
+
+                }
+                >span {
+                    color: $GREEN;
+                    font-size: 48px;
+                    font-family: number;
+                }
+                >div {
+                    color: $PURPLE;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 31px; 
+                    >p {
+                        margin: 0;
+                    }
                 }
             }
         }
