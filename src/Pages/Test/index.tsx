@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.scss';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation  } from 'react-router-dom';
 
 interface Question {
   questionText: string;
@@ -108,6 +108,8 @@ export const Test = () => {
   const navigate = useNavigate();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
+  const location = useLocation();
+  const { name } = location.state || { name: '' };
 
   // 랜덤으로 섞인 질문 배열
   const shuffledQuestions = shuffleArray(questions);
@@ -133,14 +135,14 @@ export const Test = () => {
       answers.filter(answer => answer === 'J').length > answers.filter(answer => answer === 'P').length ? 'J' : 'P'
     ].join('');
 
-    navigate('/result', { state: { result } }); 
-  };
+    navigate('/result', { state: { result, name } }); 
+    };
 
   return (
     <div className='test'>
       <header>
-        <h1>{`${currentQuestion + 1}/${shuffledQuestions.length}`}</h1>
-        <div className='step'>
+      <h1 className='number'>{currentQuestion < 9 ? `0${currentQuestion + 1}` : currentQuestion + 1}</h1>
+      <div className='step'>
           {Array.from({ length: shuffledQuestions.length }, (_, index) => (
             <span
               key={index}
@@ -150,6 +152,7 @@ export const Test = () => {
         </div>
       </header>
       <div className='quest'>
+        <img src='img/mark.svg'/>
         {shuffledQuestions[currentQuestion]?.questionText || 'No more questions'}
       </div>
       <div className='answer'>

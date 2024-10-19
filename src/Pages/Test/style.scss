@@ -4,8 +4,19 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10vh 0;
-    max-width: $MAX_WIDTH;
+    padding: 8vh 0;
+    background-image: url(../../../public/img/test.png);
+    background-repeat: no-repeat;
+    background-position: bottom ;
+    background-size: cover;
+    width: 100%;
+  
+
+      .number {
+        font-family: number;
+        font-size: 48px;
+      }
+    
 
     .step {
       display: flex;
@@ -25,8 +36,17 @@
       }
     }
     .quest {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 700;
+        font-family: $MYEONGJO;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        >img {
+          width: 38px;
+        }
     }
     .answer {
         display: flex;

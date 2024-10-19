@@ -4,10 +4,7 @@
   text-align: center;
   max-width: $MAX_WIDTH;
   background-color: $MAIN;
-  height: 100vh;
-  background-image: url(../public/img/Back_Table.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  min-height: $MIN_HEIGHT;
   display: flex;
   justify-content: center;
   color: #FFF;

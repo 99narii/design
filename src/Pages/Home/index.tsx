@@ -1,20 +1,34 @@
-import React from 'react';
-import { Button } from '../../Components/Button';
+import React, { useState } from 'react';
 import './style.scss';
 import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+    const [name, setName] = useState('');
+    const [result, setResult] = useState(''); // 결과 상태 추가
     const navigate = useNavigate();
 
     const handleNavigation = () => {
-        navigate('/test');
+        // 예시로 결과를 설정 (실제 로직에 맞게 수정 필요)
+        const exampleResult = "당신은 매우 창의적인 분자입니다!";
+        navigate('/test', { state: { name, result: exampleResult } }); // 입력값과 결과를 state로 전달
     };
 
     return (
         <div className='main'>
-            <footer className='footer'>
+            <img className='logo' src='img/Logo.svg' alt='Logo'/>
+            <div>
+                <span className='tit'>
+                    당신의 성격은<br/>어떤 분자일까요?
+                </span>
+                <input 
+                    type='text' 
+                    className='input_name' 
+                    placeholder='이름' 
+                    value={name} 
+                    onChange={(e) => setName(e.target.value)}
+                />
                 <button type='button' onClick={handleNavigation}>시작</button>
-            </footer>
+            </div>
         </div>
     );
 };
