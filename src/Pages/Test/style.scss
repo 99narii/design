@@ -5,6 +5,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10vh 0;
+    max-width: $MAX_WIDTH;
+
     .step {
       display: flex;
       justify-content: space-between;
@@ -34,11 +36,11 @@
         // background-color: #d0bef5c4;
         // color: #333333;
         border-radius: 20px;
+        padding: 0 30px 5px 30px;
         background-image: url('../../../public/img/answer_box1.svg'); 
         color: white;
         border: none;
         background-repeat: no-repeat;
-        padding-bottom: 5px;
         background-size: cover; 
         background-position: center;
         width: 90vw;

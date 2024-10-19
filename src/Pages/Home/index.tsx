@@ -13,7 +13,7 @@ export const Home = () => {
     return (
         <div className='main'>
             <footer className='footer'>
-                <Button title='연금술 시작' click={handleNavigation} />
+                <button type='button' onClick={handleNavigation}>시작</button>
             </footer>
         </div>
     );
