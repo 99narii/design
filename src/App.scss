@@ -1,0 +1,20 @@
+@import './Styles/variable.scss';
+
+.App {
+  text-align: center;
+  max-width: $MAX_WIDTH;
+  background-color: $MAIN;
+  height: 100vh;
+  background-image: url(../public/img/Back_Table.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  color: #FFF;
+  >.home_btn {
+    position: absolute;
+    left: 0;
+    border: none;
+    background-color: transparent;
+  }
+}

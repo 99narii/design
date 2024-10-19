@@ -1,0 +1,63 @@
+@import '../../Styles/variable.scss';
+.test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10vh 0;
+    .step {
+      display: flex;
+      justify-content: space-between;
+      width: 50vw;
+      .dot {
+        width: 7.5px !important;
+        height: 7.5px !important;
+        background-color: #715Fc9;
+        border-radius: 50%;
+        opacity: 0.5;
+        
+        &.active {
+          background-color: #fff; 
+          opacity: 1;
+        }
+      }
+    }
+    .quest {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .answer {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      button {
+        // background-color: #d0bef5c4;
+        // color: #333333;
+        border-radius: 20px;
+        background-image: url('../../../public/img/answer_box1.svg'); 
+        color: white;
+        border: none;
+        background-repeat: no-repeat;
+        padding-bottom: 5px;
+        background-size: cover; 
+        background-position: center;
+        width: 90vw;
+        height: 125px;
+        background-color: transparent;
+        font-size: 20px;
+        font-weight: 800;
+
+        &.blue {
+        }
+        
+        &.orange {
+            background-image: url('../../../public/img/answer_box2.svg'); 
+
+        }
+        &:active {
+            
+        }
+      }
+    }
+  }
+  

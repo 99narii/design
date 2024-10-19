@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Routes, Route,useNavigate  } from 'react-router-dom';
+import { Home } from './Pages/Home';
+import { Test } from './Pages/Test';
+import { Result } from './Pages/Result';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const navigate = useNavigate(); 
+    return (
+        <div className="App">
+                  <button className='home_btn' onClick={() => navigate('/')}>&times;</button>
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/test" element={<Test />} />
+                <Route path="/result" element={<Result />} />
+
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
