@@ -5,7 +5,7 @@ import './style.scss';
 export const Result = () => {
   const location = useLocation();
   const { state } = location;
-  const result = state ? state.result : '결과가 없습니다.'; // 기본값 설정
+  const result = state ? state.result : '결과가 없습니다.';
   
   return (
     <div className='result'>
