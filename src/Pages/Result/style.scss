@@ -134,6 +134,10 @@
             font-weight: 800;
             color: $MAIN;
             margin-top: 40px;
+            line-height: 170%;
+            >p {
+                margin: 0;
+            }
         }
         .mixture {
             // width: 100vw;
