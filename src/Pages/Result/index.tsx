@@ -58,7 +58,6 @@ export const Result = () => {
           <p className='tit'>안정된 상태</p>
         </div>
         <div className='mix_card1'></div>
-
       </div> */}
       {/* <button onClick={() => window.history.back()}>다시하기</button> */}
     </div>
