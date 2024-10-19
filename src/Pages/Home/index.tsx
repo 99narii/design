@@ -16,10 +16,13 @@ export const Home = () => {
     return (
         <div className='main'>
             <img className='logo' src='img/Logo.svg' alt='Logo'/>
-            <div>
-                <span className='tit'>
+            <img className='char' src='img/char.png' />
+
+            <span className='tit'>
                     당신의 성격은<br/>어떤 분자일까요?
-                </span>
+            </span>
+
+            <div className='card_cont'>
                 <input 
                     type='text' 
                     className='input_name' 

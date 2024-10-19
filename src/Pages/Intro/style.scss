@@ -1,0 +1,31 @@
+@import '../../Styles/variable.scss';
+
+.intro {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vh 0;
+    background-image: url(../../../public/img/Back_Table.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    .tit {
+        font-size: 36px;
+        font-family: son;
+    }
+    .intro {
+        padding: 0 0 0 10px;
+    }
+
+    >button {
+        width: 309px;
+        height: 62px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        background: #F7F7F7;
+        border: none;
+        color: $PURPLE;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}

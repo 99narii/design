@@ -54,6 +54,9 @@ export const Result = () => {
         <img src='img/Icon_Arrow.svg'/>
         <p >카드를 뒤집어 <br/> 자세한 정보를 확인하세요.</p>
       </div>
+      <div className='share'>
+        <button type='button'>공유하기</button>
+      </div>
       <div className='mixture'>
         <p className='tit'>당신의 조합은?</p>
         <div className='mix_card2'>

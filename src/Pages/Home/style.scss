@@ -5,24 +5,39 @@
     flex-direction: column;    
     justify-content: space-between;
     align-items: center;
-    padding-top: 15vh;
+    padding-top: 5vh;
     background-image: url(../../../public/img/Back_Table.svg);
     background-repeat: no-repeat;
     background-position: center;
-  
-    div {
-        height: 50vh;
+    .tit {
+        font-size: 48px;
+        font-family: son;
+    }
+    .logo {
+        width: 193px;
+    }
+    .char {
+        width: 100px;
+
+    }
+
+    .card_cont {
+        height: 360px;
+        width: 342px;
+        background-image: url(../../../public/img/card_half.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         flex-direction: column;    
-        justify-content: space-between;
-        gap: 20px;
-        margin: auto;
-        .tit {
-            font-size: 48px;
-            font-family: son;
-        }
+        justify-content: center;
+        gap: 90px;
+        border-radius: 15px 15px 0 0;
+        margin: 0;
+        margin: 0 auto;
         .input_name {
-            width: 309px;
+            background-color: #F3F0FF;
+            width: 90%;
             height: 40px;
             border: none;
             border-radius: 7px;
