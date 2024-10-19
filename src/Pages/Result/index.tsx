@@ -33,10 +33,10 @@ export const Result = () => {
             <div className='type_box'>
             만능 조미료
             </div>
-            <img src='img/type/na.png'/>
+            <img src='img/type/Na.png'/>
             <span className='card_footer'>
               <div>
-                <img src='img/icon.svg'/>
+                <img src='img/Icon.svg'/>
               <p>Na</p>
               </div>
               <p className='tit_ko'>나트륨</p>
