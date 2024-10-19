@@ -9,7 +9,7 @@ export const Result = () => {
   
   return (
     <div className='result'>
-      <h1>당신의 MBTI 결과</h1>
+      <h1>결과</h1>
       <h2>{result}</h2>
       <button onClick={() => window.history.back()}>다시하기</button>
     </div>
