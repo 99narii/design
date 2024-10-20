@@ -134,6 +134,10 @@
                 align-items: center;
                 justify-content: center;
                 color: #fff;
+                >p {
+                    padding: 3rem;
+                    line-height: 180%;
+                }
             }
           }
         }
