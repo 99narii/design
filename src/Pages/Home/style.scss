@@ -2,12 +2,12 @@
 
 @keyframes slideUp {
     0% {
-        transform: translateY(100%); /* 시작 위치: 아래 */
-        opacity: 0; /* 시작 시 투명도 0 */
+        transform: translateY(100%); 
+        opacity: 0; 
     }
     100% {
-        transform: translateY(0); /* 최종 위치: 현재 위치 */
-        opacity: 1; /* 최종 투명도 1 */
+        transform: translateY(0); 
+        opacity: 1; 
     }
 }
 
@@ -24,12 +24,15 @@
     .tit {
         font-size: 48px;
         font-family: son;
+
     }
     .logo {
         width: 193px;
+        
     }
     .char {
         width: 100px;
+        animation: fadeIn 1s ease-in forwards;
 
     }
 

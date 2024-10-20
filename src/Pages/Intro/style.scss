@@ -1,5 +1,6 @@
 @import '../../Styles/variable.scss';
 
+
 .intro {
     display: flex;
     flex-direction: column;    
@@ -9,12 +10,15 @@
     background-image: url(../../../public/img/Back_Table.svg);
     background-repeat: no-repeat;
     background-position: center;
+    animation: fadeIn 1s ease-in forwards;
+
     .tit {
         font-size: 36px;
         font-family: son;
     }
     .intro {
         padding: 0 0 0 10px;
+        opacity: 1;
     }
 
     >button {
