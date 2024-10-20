@@ -95,19 +95,6 @@ const questions: Question[] = [
   },
 ];
 
-const shuffleArray = (array: Question[]): Question[] => {
-  // 배열의 복사본을 생성
-  const arrayCopy = [...array];
-
-  for (let i = arrayCopy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    // 배열 요소 교환
-    [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
-  }
-  
-  return arrayCopy; // 섞인 배열 반환
-};
-
 
 export const Test = () => {
   const navigate = useNavigate();
@@ -116,14 +103,11 @@ export const Test = () => {
   const location = useLocation();
   const { name } = location.state || { name: '' };
 
-  // 랜덤으로 섞인 질문 배열
-  const shuffledQuestions = shuffleArray(questions);
-
   const handleAnswer = (answer: string) => {
     const newAnswers = [...answers, answer];
     setAnswers(newAnswers);
 
-    if (newAnswers.length < shuffledQuestions.length) {
+    if (newAnswers.length < questions.length) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       // 질문이 끝났을 때 결과 페이지로 이동
@@ -140,15 +124,15 @@ export const Test = () => {
       answers.filter(answer => answer === 'J').length > answers.filter(answer => answer === 'P').length ? 'J' : 'P'
     ].join('');
 
-    navigate('/result', { state: { result, name } }); 
-    };
+    navigate('/result', { state: { result, name } });
+  };
 
   return (
     <div className='test'>
       <header>
-      <h1 className='number'>{currentQuestion < 9 ? `0${currentQuestion + 1}` : currentQuestion + 1}</h1>
-      <div className='step'>
-          {Array.from({ length: shuffledQuestions.length }, (_, index) => (
+        <h1 className='number'>{currentQuestion < 9 ? `0${currentQuestion + 1}` : currentQuestion + 1}</h1>
+        <div className='step'>
+          {Array.from({ length: questions.length }, (_, index) => (
             <span
               key={index}
               className={`dot ${index < currentQuestion ? 'active' : ''}`}
@@ -157,11 +141,11 @@ export const Test = () => {
         </div>
       </header>
       <div className='quest'>
-        <img src='img/mark.svg'/>
-        {shuffledQuestions[currentQuestion]?.questionText || 'No more questions'}
+        <img src='img/mark.svg' />
+        {questions[currentQuestion]?.questionText || 'No more questions'}
       </div>
       <div className='answer'>
-        {shuffledQuestions[currentQuestion]?.options.map((option, index) => (
+        {questions[currentQuestion]?.options.map((option, index) => (
           <button
             key={index}
             className={index % 2 === 0 ? 'blue' : 'orange'}

@@ -23,7 +23,7 @@
     .step {
       display: flex;
       justify-content: space-between;
-      width: 50%;
+      width: 192px;
       .dot {
         width: 7.5px !important;
         height: 7.5px !important;
@@ -40,7 +40,7 @@
     .quest {
         font-size: 24px;
         font-weight: 700;
-        font-family: $MYEONGJO;
+        font-family: $GOTHIC;
         display: flex;
         flex-direction: column;
         justify-content: center;
