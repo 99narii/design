@@ -10,7 +10,7 @@
     background-position: bottom 0;
     background-size: cover;
     height: 85vh;
-    width: 100vw;
+    width: 100%;
     animation: fadeIn 1s ease-in forwards;
 
 
@@ -23,7 +23,7 @@
     .step {
       display: flex;
       justify-content: space-between;
-      width: 50vw;
+      width: 50%;
       .dot {
         width: 7.5px !important;
         height: 7.5px !important;
@@ -68,7 +68,8 @@
         background-repeat: no-repeat;
         background-size: cover; 
         background-position: center;
-        width: 90vw;
+        width: 90%;
+        margin: 0 auto;
         height: 125px;
         background-color: transparent;
         font-size: 20px;

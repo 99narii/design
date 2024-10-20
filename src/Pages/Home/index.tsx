@@ -23,15 +23,21 @@ export const Home = () => {
                 </span>
             </div>
             <div className='card_cont'>
-                <input 
-                    type='text' 
-                    className='input_name' 
-                    placeholder='이름' 
-                    value={name} 
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <button type='button' onClick={handleNavigation}>시작</button>
+      <input 
+        type='text' 
+        className='input_name' 
+        placeholder='이름' 
+        value={name} 
+        onChange={(e) => setName(e.target.value)}
+      />
+      <button 
+        type='button' 
+        onClick={handleNavigation}
+        disabled={!name} // 이름이 비어있으면 버튼 비활성화
+      >
+        시작
+      </button>
             </div>
         </div>
     );
-};
+}

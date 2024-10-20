@@ -95,14 +95,19 @@ const questions: Question[] = [
   },
 ];
 
-// 질문을 랜덤으로 섞기
-const shuffleArray = (array: Question[]) => {
-  for (let i = array.length - 1; i > 0; i--) {
+const shuffleArray = (array: Question[]): Question[] => {
+  // 배열의 복사본을 생성
+  const arrayCopy = [...array];
+
+  for (let i = arrayCopy.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]]; // 배열 요소 교환
+    // 배열 요소 교환
+    [arrayCopy[i], arrayCopy[j]] = [arrayCopy[j], arrayCopy[i]];
   }
-  return array;
+  
+  return arrayCopy; // 섞인 배열 반환
 };
+
 
 export const Test = () => {
   const navigate = useNavigate();
