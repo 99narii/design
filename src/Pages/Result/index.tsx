@@ -16,6 +16,16 @@ export const Result = () => {
     setFlipped(!flipped);
     console.log('뒤집힘')
   };
+  const handleCopyLink = () => {
+    const url = window.location.href; // 현재 URL 가져오기
+    navigator.clipboard.writeText(url)
+      .then(() => {
+        alert('링크가 복사되었습니다!'); // 복사 성공 시 알림
+      })
+      .catch(err => {
+        console.error('링크 복사 실패:', err);
+      });
+  };
 
   return (
     <div className='result'>
@@ -55,7 +65,7 @@ export const Result = () => {
         <p >카드를 뒤집어 <br/> 자세한 정보를 확인하세요.</p>
       </div>
       <div className='share'>
-        <button type='button'>공유하기</button>
+      <button type='button' onClick={handleCopyLink}>링크복사</button>
       </div>
       <div className='mixture'>
         <p className='tit'>당신의 조합은?</p>
