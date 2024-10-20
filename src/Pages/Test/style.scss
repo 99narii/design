@@ -7,9 +7,10 @@
     padding: 8vh 0;
     background-image: url(../../../public/img/test.png);
     background-repeat: no-repeat;
-    background-position: bottom ;
+    background-position: bottom 0;
     background-size: cover;
-    width: 100%;
+    height: 85vh;
+    width: 100vw;
     animation: fadeIn 1s ease-in forwards;
 
 

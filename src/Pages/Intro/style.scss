@@ -6,9 +6,12 @@
     flex-direction: column;    
     justify-content: space-between;
     align-items: center;
+    height: 85vh;
+    width: 100%;
     padding: 5vh 0;
     background-image: url(../../../public/img/Back_Table.svg);
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
     animation: fadeIn 1s ease-in forwards;
 
@@ -16,9 +19,16 @@
         font-size: 36px;
         font-family: son;
     }
-    .intro {
+    .intro-img {
         padding: 0 0 0 10px;
         opacity: 1;
+        background-image: url('../../../public/img/intro.png');
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;    
+        max-height: 400px;
+        height: 100%;
+        width: 80% !important;
     }
 
     >button {

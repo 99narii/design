@@ -15,12 +15,24 @@
 .main {
     display: flex;
     flex-direction: column;    
-    justify-content: space-between;
     align-items: center;
-    padding-top: 5vh;
+    height: 85vh;
+    width: 100%;
+    padding: 5vh 0;
     background-image: url(../../../public/img/Back_Table.svg);
     background-repeat: no-repeat;
+    background-size: auto;
     background-position: center;
+    gap: 3rem;
+
+    >.title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+    }
     .tit {
         font-size: 48px;
         font-family: son;
@@ -31,13 +43,15 @@
         
     }
     .char {
-        width: 100px;
+        width: 5rem;
         animation: fadeIn 1s ease-in forwards;
 
     }
 
     .card_cont {
         animation: slideUp 0.6s ease-out forwards;
+        position: absolute;
+        bottom: -2rem;
         height: 360px;
         width: 342px;
         background-image: url(../../../public/img/card_half.png);
