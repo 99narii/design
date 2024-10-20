@@ -8,7 +8,7 @@
     align-items: center;
     height: 85vh;
     width: 100%;
-    padding: 5vh 0;
+    padding: 3vh 0;
     background-image: url(../../../public/img/Back_Table.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -44,7 +44,7 @@
     }
  
 }
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 720px) {
     .intro {
         .tit {
             font-size: 30px;

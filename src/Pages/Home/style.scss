@@ -18,19 +18,18 @@
     align-items: center;
     height: 85vh;
     width: 100%;
-    padding: 5vh 0;
+    padding: 3vh 0;
     background-image: url(../../../public/img/Back_Table.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center;
-    gap: 3rem;
+    gap: 2rem;
 
     >.title {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         gap: 1rem;
     }
     .tit {
@@ -51,7 +50,7 @@
     .card_cont {
         animation: slideUp 0.6s ease-out forwards;
         position: absolute;
-        bottom: -2rem;
+        bottom: -3rem;
         height: 360px;
         width: 342px;
         background-image: url(../../../public/img/card_half.png);
@@ -99,6 +98,10 @@
         .tit {
             font-size: 30px;
         }
+        .char {
+            height: 90px;
+        }
+    
         .card_cont {
             max-height: 330px;
             width: 100%;
