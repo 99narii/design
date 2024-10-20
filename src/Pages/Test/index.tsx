@@ -33,8 +33,8 @@ const questions: Question[] = [
   {
     questionText: '눈 앞에 사과가 있어!',
     options: [
-      { text: '빨갛네? 맛있겠다....!', value: 'S' },
-      { text: '사과.....? 아이폰....?', value: 'N' },
+      { text: '빨갛네? 맛있겠다.!', value: 'S' },
+      { text: '사과? 아이폰....?', value: 'N' },
     ],
   },
   {

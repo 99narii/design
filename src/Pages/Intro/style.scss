@@ -26,7 +26,7 @@
         background-repeat: no-repeat;
         background-size: auto;
         background-position: center;    
-        max-height: 400px;
+        max-height: 380px;
         height: 100%;
         width: 80% !important;
     }
@@ -41,5 +41,18 @@
         color: $PURPLE;
         font-size: 24px;
         font-weight: 700;
+    }
+ 
+}
+@media screen and (max-height: 700px) {
+    .intro {
+        .tit {
+            font-size: 30px;
+        }
+        .intro-img {
+            max-height: 360px;
+            width: 100%;
+            background-size: contain;
+        }
     }
 }

@@ -93,3 +93,19 @@
     
     }
 }
+
+@media screen and (max-height: 700px) {
+    .main {
+        .tit {
+            font-size: 30px;
+        }
+        .card_cont {
+            max-height: 330px;
+            width: 100%;
+            background-size: contain;
+            .input_name {
+                width: 260px;
+            }
+        }
+    }
+}
