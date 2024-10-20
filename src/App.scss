@@ -7,6 +7,8 @@
   min-height: $MIN_HEIGHT;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   color: #FFF;
   font-family: $GOTHIC;
   >.home_btn {

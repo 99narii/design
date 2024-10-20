@@ -46,6 +46,8 @@
         align-items: center;
         gap: 16px;
         padding: 0 30px;
+        animation: fadeIn 1s ease-in forwards;
+
         >img {
           width: 38px;
         }

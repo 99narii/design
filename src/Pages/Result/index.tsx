@@ -20,14 +20,14 @@ export const Result = () => {
   return (
     <div className='result'>
       <span className='tit'>결과</span>
-      <div>
+      <div className='card_cont'>
         <div className={`card ${flipped ? 'flipped' : ''}`} onClick={handleCardClick}>
           <div className='inner'>
             <div className='front'>
               <span className='card_header'>
                 <img src='img/s_logo.svg'/>
                 <p className='name'>
-                  {name ? `${name}님` : '이름이 전달되지 않았습니다.'}
+                  {name ? `${name}님` : '손님'}
                 </p>
               </span>
               <h2 className='type'>{result}</h2>

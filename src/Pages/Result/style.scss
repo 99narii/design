@@ -21,11 +21,15 @@
         margin: 19px 0 19px 7vw;
         color: $PURPLE;
     }
+    >.card_cont {
+        max-width: 380px;
+        width: 100%;
+        margin: 0 auto;
     .card {
-        height: 490px; /* 카드의 고정 높이 */
-        width: 100%; /* 부모에 맞춤 */
-        position: relative; /* 자식 요소의 기준이 될 위치 설정 */
-        perspective: 1000px; /* 3D 효과를 위한 원근감 설정 */
+        height: 490px; 
+        width: 100%; 
+        position: relative; 
+        perspective: 1000px; 
             &.flipped {
             .inner {
               transform: rotateY(180deg);
@@ -133,6 +137,7 @@
             }
           }
         }
+    }
         .info {
             font-size: 16px;
             font-style: normal;
@@ -171,6 +176,7 @@
 
             }
             >div {
+                margin: 0 auto;
                 animation: fadeIn 1s ease-in forwards; 
                 width: 347px;
                 height: 170px;
